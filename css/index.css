@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(244, 246, 254);
+    color: rgb(6, 48, 90);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0;
+    padding: 7svh 7svw;
+}
+
+h1 {
+    font-style: oblique;
+    font-size: 40px;
+    color: rgb(91, 164, 237);
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(86, 148, 210);
+}
+
+section {
+    margin-bottom: 5svh;
+}
+
+a {
+    color: rgb(67, 181, 234);
+    text-decoration: none;
+}
+
+li {
+    list-style: circle;
+    padding-bottom: 10px;
+}
+
+#Experience {
+    border-color: rgb(97, 165, 197);
+    border-width: 1px;
+    border-block-style: solid;
+}
+
+#Connect ul {
+    padding-left: 0;
+}
+
+#Connect li {
+    display: inline-block;
+    margin: 0;
+    padding: 25px 25px;
+}
+#profile-picture {
+    border-radius: 50%;
+}
