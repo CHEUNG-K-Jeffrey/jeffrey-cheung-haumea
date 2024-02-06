@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    align-self: center;
+    margin: 0 10rem;
+    max-width: 100rem;
+}
+
+.divider-menu-item {
+    display: none;
+}
+
+#menu {
+    flex-direction: row;
+    max-width: 100rem;
+}
+
+.menu-item {
+    justify-content: space-evenly;
+    height: 5rem;
+    font-size: 1.15rem;
+    max-width: 20rem;
+}
+
+#Experience ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+
+#Experience li {
+    max-width: 20rem;
+}
