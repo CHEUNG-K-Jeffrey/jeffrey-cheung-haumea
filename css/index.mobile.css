@@ -1,0 +1,145 @@
+/* Designed for mobile first */
+
+html {
+    scroll-padding-top: 4rem;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(248, 250, 255);
+    color: rgb(6, 48, 90);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-style: oblique;
+    font-size: 40px;
+    color: rgb(91, 164, 237);
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(86, 148, 210);
+}
+
+a {
+    color: rgb(67, 181, 234);
+    text-decoration: none;
+}
+
+li {
+    list-style: circle;
+    padding-bottom: 10rem;
+}
+
+section {
+    padding: 0 2rem;
+}
+
+section:first-of-type {
+    padding-top: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.divider {
+    border-top: 1px solid
+}
+
+.divider-section {
+    margin: 0px 2rem;
+    border-color: rgb(97, 165, 197);
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px rgb(163, 163, 163);
+}
+
+.menu-item {
+    background-color: white;
+    list-style: none;
+    padding: 0.1rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item a:hover {
+    border-radius: 10px;
+    background-color: rgb(201, 227, 252);
+}
+
+.menu-item a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+#Experience ul {
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+
+#Experience li {
+    background-color: rgb(228, 241, 253);
+    min-width: 12rem;
+    min-height: 12rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    border: 1px rgb(119, 157, 246) solid;
+    padding: 2rem;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+#Experience a {
+    min-height: 25%;
+}
+
+#Connect h2 {
+    padding-bottom: 20px;
+}
+
+#Connect ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+#Connect li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#profile-picture {
+    border-radius: 50%;
+}
