@@ -88,7 +88,28 @@
             </ul>
         </section>
     </main>
-    <script src="js/index.js"></script>
+    <section id="comments">
+        <h2>Leave a Message</h2>
+        <form action="" name="leave_message">
+            <label for="usersName">Name:</label>
+            <input id="usersName" type="text" name="usersName" required="required">
+            <br>
+            <label for="usersEmail">Email: </label>
+            <input id="usersEmail" type="email" name="usersEmail" required="required">
+            <br>
+            <label for="usersMessage">Message:</label>
+            <br>
+            <textarea name="usersMessage" id="usersMessage" cols="30" rows="10" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+    <script src="js/index.js">
+    </script>
 </body>
 
 </html>
