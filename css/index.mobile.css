@@ -44,7 +44,7 @@ li {
 }
 
 section {
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 section:first-of-type {
@@ -62,7 +62,7 @@ nav {
 }
 
 .divider-section {
-    margin: 0px 2rem;
+    margin: 0px 1rem;
     border-color: rgb(97, 165, 197);
 }
 
