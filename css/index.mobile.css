@@ -43,7 +43,8 @@ li {
     padding-bottom: 10rem;
 }
 
-section {
+section,
+footer {
     padding: 0 1rem;
 }
 
