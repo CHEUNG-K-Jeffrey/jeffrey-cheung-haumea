@@ -9,8 +9,10 @@ nav {
     align-items: center;
 }
 
-main {
-    align-self: center;
+main,
+section#comments,
+section#messages,
+footer {
     margin: 0 10rem;
     max-width: 100rem;
 }
