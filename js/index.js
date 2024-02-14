@@ -86,23 +86,23 @@ onMessageListChange([{ target: messageList, type: "childList" }]);
 (() => {
     let projectList = document.querySelector("section#Projects > ul");
     fetch("https://api.github.com/users/CHEUNG-K-Jeffrey/repos?sort=created")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("Request failed");
-        }
-        return response.json();
-    })
-    .then(data => {
-        data.forEach(repo => {
-            let projectEntry = document.createElement("li");
-            projectEntry.innerHTML = `<a href="${repo.html_url}">${repo.name}</a><div>${repo.description ?? "No description found"}</div>`;
-            projectList.appendChild(projectEntry);
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Request failed");
+            }
+            return response.json();
         })
-    })
-    .catch(error => {
-        let projectEntry = document.createElement("li");
-        projectEntry.innerText = `An error occurred: ${error}`;
-        projectList.appendChild(projectEntry);
-        console.error(projectEntry.innerText);
-    })
+        .then(data => {
+            data.forEach(repo => {
+                let projectEntry = document.createElement("li");
+                projectEntry.innerHTML = `<a href="${repo.html_url}">${repo.name}</a><div>${repo.description ?? "No description found"}</div>`;
+                projectList.appendChild(projectEntry);
+            })
+        })
+        .catch(error => {
+            let projectEntry = document.createElement("li");
+            projectEntry.innerText = `An error occurred: ${error}`;
+            projectList.appendChild(projectEntry);
+            console.error(projectEntry.innerText);
+        })
 })();
