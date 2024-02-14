@@ -65,8 +65,8 @@ let messageList = document.querySelector("section#messages > ul");
 
 let onMessageListChange = (mutationList, observer) => {
     for (const mutation of mutationList) {
-        if (mutation.type === "childList"){
-            if(mutation.target.hasChildNodes()) {
+        if (mutation.type === "childList") {
+            if (mutation.target.hasChildNodes()) {
                 mutation.target.parentNode.style = "display: block;";
             } else {
                 mutation.target.parentNode.style = "display: none;";
@@ -77,8 +77,32 @@ let onMessageListChange = (mutationList, observer) => {
 
 let observer = new MutationObserver(onMessageListChange);
 
-observer.observe(messageList, {childList: true});
+observer.observe(messageList, { childList: true });
 
 // Initialize the message section
-onMessageListChange([{target: messageList, type: "childList"}]);
+onMessageListChange([{ target: messageList, type: "childList" }]);
 
+// Initialize the project section
+(() => {
+    let projectList = document.querySelector("section#Projects > ul");
+    fetch("https://api.github.com/users/CHEUNG-K-Jeffrey/repos")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Request failed");
+        }
+        return response.json();
+    })
+    .then(data => {
+        data.forEach(repo => {
+            let projectEntry = document.createElement("li");
+            projectEntry.innerText = repo.name;
+            projectList.appendChild(projectEntry);
+        })
+    })
+    .catch(error => {
+        let projectEntry = document.createElement("li");
+        projectEntry.innerText = `An error occurred: ${error}`;
+        projectList.appendChild(projectEntry);
+        console.error(projectEntry.innerText);
+    })
+})();
