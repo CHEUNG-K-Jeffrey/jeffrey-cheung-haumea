@@ -85,7 +85,7 @@ onMessageListChange([{ target: messageList, type: "childList" }]);
 // Initialize the project section
 (() => {
     let projectList = document.querySelector("section#Projects > ul");
-    fetch("https://api.github.com/users/CHEUNG-K-Jeffrey/repos")
+    fetch("https://api.github.com/users/CHEUNG-K-Jeffrey/repos?sort=created")
     .then(response => {
         if (!response.ok) {
             throw new Error("Request failed");
@@ -95,7 +95,7 @@ onMessageListChange([{ target: messageList, type: "childList" }]);
     .then(data => {
         data.forEach(repo => {
             let projectEntry = document.createElement("li");
-            projectEntry.innerText = repo.name;
+            projectEntry.innerHTML = `<a href="${repo.html_url}">${repo.name}</a><div>${repo.description ?? "No description found"}</div>`;
             projectList.appendChild(projectEntry);
         })
     })
