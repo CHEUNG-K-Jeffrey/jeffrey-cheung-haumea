@@ -144,3 +144,27 @@ nav {
 #profile-picture {
     border-radius: 50%;
 }
+
+form {
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+input,
+textarea {
+    display: block;
+    border: 1px rgb(119, 157, 246) solid;
+    border-radius: 5px;
+    padding: 0.4rem;
+}
+
+#submitMessage {
+    background-color: rgb(205, 222, 239);
+    padding: 0.6rem;
+    border: 1px solid rgb(119, 157, 246);
+    border-radius: 5px;
+}
+
+#submitMessage:hover {
+    outline: 2px solid rgb(61, 117, 249);
+}
