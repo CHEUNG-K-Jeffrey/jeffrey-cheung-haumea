@@ -1,11 +1,11 @@
 let body = document.querySelector("body");
 let today = new Date();
 let thisYear = today.getFullYear();
-let footer = document.createElement("footer");
-let copyright = document.createElement("p");
+let footer = document.querySelector("footer");
+let copyright = document.createElement("span");
 
 copyright.innerHTML = `\u00A9 ${thisYear} Jeffrey Cheung`;
-footer.appendChild(copyright);
+footer.prepend(copyright);
 
 let skills = ["HTML", "CSS", "JavaScript"];
 let skillsSections = document.querySelector("#Skills");
