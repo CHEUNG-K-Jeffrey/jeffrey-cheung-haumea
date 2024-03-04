@@ -131,13 +131,20 @@ nav {
     padding-bottom: 20px;
 }
 
-#Connect ul {
+#footer {
+    display: flex;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+}
+
+#social-media-links {
     display: flex;
     justify-content: space-evenly;
+    gap: 1rem;
     padding: 0;
 }
 
-#Connect li {
+#social-media-links li {
     display: inline-block;
     margin: 0;
     padding: 0;

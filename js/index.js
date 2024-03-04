@@ -2,7 +2,7 @@ let body = document.querySelector("body");
 let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector("footer");
-let copyright = document.createElement("span");
+let copyright = document.createElement("p");
 
 copyright.innerHTML = `\u00A9 ${thisYear} Jeffrey Cheung`;
 footer.prepend(copyright);
