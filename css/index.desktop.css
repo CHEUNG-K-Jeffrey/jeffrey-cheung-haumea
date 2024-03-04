@@ -33,13 +33,15 @@ footer {
     max-width: 20rem;
 }
 
-#Experience ul {
+#Experience ul,
+#Skills ul {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     gap: 2vw;
 }
 
-#Experience li {
+#Experience li,
+#Skills li {
     max-width: 20rem;
 }

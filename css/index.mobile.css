@@ -98,7 +98,8 @@ nav {
     padding: 0.8rem;
 }
 
-#Experience ul {
+#Experience ul,
+#Skills ul {
     padding: 0;
     display: flex;
     overflow: hidden;
@@ -107,7 +108,8 @@ nav {
     gap: 20px 20px;
 }
 
-#Experience li {
+#Experience li,
+#Skills li {
     background-color: rgb(228, 241, 253);
     min-width: 12rem;
     min-height: 12rem;
